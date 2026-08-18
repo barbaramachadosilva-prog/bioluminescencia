@@ -1,0 +1,1854 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Magia das Cores | Arco-íris</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800&display=swap"
+          rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     FUNDO
+================================================== -->
+
+<div class="background-grid"></div>
+
+<div class="background-glow glow-one"></div>
+<div class="background-glow glow-two"></div>
+
+
+
+<!-- ==================================================
+     CABEÇALHO
+================================================== -->
+
+<header>
+
+    <nav class="navbar">
+
+        <a href="#inicio" class="logo">
+
+            <div class="logo-symbol">
+                🌈
+            </div>
+
+            <div class="logo-text">
+
+                <strong>A MAGIA</strong>
+
+                <span>DAS CORES</span>
+
+            </div>
+
+        </a>
+
+
+        <button
+            class="mobile-button"
+            id="mobileButton"
+            aria-label="Abrir menu">
+
+            ☰
+
+        </button>
+
+
+        <ul class="navigation" id="navigation">
+
+            <li>
+                <a href="#inicio" class="active">
+                    INÍCIO
+                </a>
+            </li>
+
+
+            <li class="research-dropdown">
+
+                <button
+                    id="researchButton"
+                    type="button">
+
+                    PESQUISA
+
+                    <span>⌄</span>
+
+                </button>
+
+
+                <div class="dropdown-menu">
+
+                    <a href="#oque">
+                        <b>01</b>
+                        O que é?
+                    </a>
+
+                    <a href="#como">
+                        <b>02</b>
+                        Como acontece?
+                    </a>
+
+                    <a href="#exemplos">
+                        <b>03</b>
+                        Exemplos
+                    </a>
+
+                    <a href="#curiosidades">
+                        <b>04</b>
+                        Mitos e verdades
+                    </a>
+
+                    <a href="#robotica">
+                        <b>05</b>
+                        Robótica
+                    </a>
+
+                    <a href="#conclusao">
+                        <b>06</b>
+                        Conclusão
+                    </a>
+
+                </div>
+
+            </li>
+
+
+            <li>
+
+                <a href="#quiz">
+                    QUIZ
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a href="#evidencias">
+                    EVIDÊNCIAS
+                </a>
+
+            </li>
+
+        </ul>
+
+
+        <div class="nav-status">
+
+            <span class="status-dot"></span>
+
+            PROJETO ONLINE
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+<!-- ==================================================
+     CONTEÚDO
+================================================== -->
+
+<main>
+
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<section class="hero" id="inicio">
+
+
+    <div class="hero-content">
+
+
+        <div class="hero-information">
+
+
+            <div class="section-tag">
+
+                <span class="tag-line"></span>
+
+                PROJETO INTERDISCIPLINAR
+
+                <span class="tag-symbol">
+                    🌈
+                </span>
+
+            </div>
+
+
+            <h1>
+
+                A LUZ QUE
+
+                <br>
+
+                REVELA
+
+                <span>AS CORES.</span>
+
+            </h1>
+
+
+            <p class="hero-description">
+
+                Descubra como a luz branca, a água e a
+                reflexão e refração podem formar um dos
+                fenômenos naturais mais fascinantes:
+                o arco-íris.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a
+                    href="#oque"
+                    class="button-primary">
+
+                    EXPLORAR PESQUISA
+
+                    <span>→</span>
+
+                </a>
+
+
+                <a
+                    href="#quiz"
+                    class="button-secondary">
+
+                    FAZER QUIZ
+
+                    <span>✦</span>
+
+                </a>
+
+            </div>
+
+
+            <div class="hero-information-cards">
+
+
+                <div class="hero-mini-card">
+
+                    <div class="mini-icon">
+                        ☀
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            LUZ
+                        </strong>
+
+                        <span>
+                            SOLAR
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-mini-card">
+
+                    <div class="mini-icon">
+                        💧
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            GOTAS
+                        </strong>
+
+                        <span>
+                            DE ÁGUA
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-mini-card">
+
+                    <div class="mini-icon">
+                        🌈
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            CORES
+                        </strong>
+
+                        <span>
+                            DO ESPECTRO
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- ==================================================
+             ÁREA DO ARCO-ÍRIS
+        ================================================== -->
+
+        <div class="bioluminescent-ocean rainbow-display">
+
+
+            <div class="ocean-title">
+
+                <span class="live-dot"></span>
+
+                ARCO-ÍRIS
+
+                <small>LIVE</small>
+
+            </div>
+
+
+            <canvas
+                id="oceanCanvas">
+            </canvas>
+
+
+            <div class="ocean-overlay">
+
+
+                <div class="ocean-information">
+
+                    <div class="information-icon">
+                        🌈
+                    </div>
+
+                    <div>
+
+                        <small>
+                            CURIOSIDADE
+                        </small>
+
+                        <p>
+
+                            O arco-íris acontece quando a
+                            luz do Sol interage com pequenas
+                            gotas de água presentes no ar.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="ocean-bottom">
+
+                    <span>
+                        ● LUZ + ÁGUA
+                    </span>
+
+                    <span>
+                        CLIQUE NA ÁREA
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ==================================================
+     NAVEGAÇÃO DA PESQUISA
+================================================== -->
+
+<section class="research-navigation">
+
+
+    <div class="research-navigation-title">
+
+        <span>
+            NAVEGUE PELA PESQUISA
+        </span>
+
+        <div class="navigation-line">
+            <i></i>
+        </div>
+
+    </div>
+
+
+    <a href="#oque">
+
+        <strong>01</strong>
+
+        <div>
+
+            <b>O QUE É?</b>
+
+            <span>
+                Conceito e definição
+            </span>
+
+        </div>
+
+    </a>
+
+
+    <a href="#como">
+
+        <strong>02</strong>
+
+        <div>
+
+            <b>COMO ACONTECE?</b>
+
+            <span>
+                Luz, água e refração
+            </span>
+
+        </div>
+
+    </a>
+
+
+    <a href="#exemplos">
+
+        <strong>03</strong>
+
+        <div>
+
+            <b>EXEMPLOS</b>
+
+            <span>
+                Fenômenos relacionados
+            </span>
+
+        </div>
+
+    </a>
+
+
+    <a href="#curiosidades">
+
+        <strong>04</strong>
+
+        <div>
+
+            <b>MITOS E VERDADES</b>
+
+            <span>
+                Curiosidades
+            </span>
+
+        </div>
+
+    </a>
+
+
+    <a href="#robotica">
+
+        <strong>05</strong>
+
+        <div>
+
+            <b>ROBÓTICA</b>
+
+            <span>
+                Fade-in e fade-out
+            </span>
+
+        </div>
+
+    </a>
+
+
+    <a href="#conclusao">
+
+        <strong>06</strong>
+
+        <div>
+
+            <b>CONCLUSÃO</b>
+
+            <span>
+                Síntese final
+            </span>
+
+        </div>
+
+    </a>
+
+
+</section>
+
+
+
+<!-- ==================================================
+     O QUE É
+================================================== -->
+
+<section class="research-section" id="oque">
+
+
+    <div class="section-heading">
+
+
+        <div class="section-number">
+            01.
+        </div>
+
+
+        <div>
+
+            <span>
+                CONCEITO TEÓRICO
+            </span>
+
+            <h2>
+
+                O QUE É
+
+                <br>
+
+                <strong>UM ARCO-ÍRIS?</strong>
+
+            </h2>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="definition-grid">
+
+
+        <div class="definition-text">
+
+
+            <p class="large-paragraph">
+
+                O arco-íris é um fenômeno óptico e
+                meteorológico produzido pela interação
+                entre a <strong>luz do Sol e gotas de água</strong>
+                presentes na atmosfera.
+
+            </p>
+
+
+            <p>
+
+                Quando a luz entra em uma gota de água,
+                ela sofre refração. A luz branca é formada
+                por diferentes comprimentos de onda, que
+                podem ser separados durante esse processo.
+
+            </p>
+
+
+            <p>
+
+                É por isso que conseguimos observar
+                diferentes cores formando o arco que
+                conhecemos como arco-íris.
+
+            </p>
+
+
+            <div class="concept-box">
+
+                <div class="concept-symbol">
+                    🌈
+                </div>
+
+                <div>
+
+                    <strong>
+                        CONCEITO-CHAVE
+                    </strong>
+
+                    <p>
+
+                        Luz branca
+                        →
+                        refração
+                        →
+                        reflexão
+                        →
+                        dispersão
+                        →
+                        cores.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="science-diagram">
+
+
+            <div class="diagram-title">
+
+                <span></span>
+
+                FORMAÇÃO DO ARCO-ÍRIS
+
+            </div>
+
+
+            <div class="diagram-circle">
+
+                <div class="diagram-core">
+                    🌈
+                </div>
+
+                <div class="diagram-orbit orbit-a"></div>
+
+                <div class="diagram-orbit orbit-b"></div>
+
+                <div class="diagram-particle dp1"></div>
+
+                <div class="diagram-particle dp2"></div>
+
+                <div class="diagram-particle dp3"></div>
+
+            </div>
+
+
+            <div class="diagram-label label-a">
+                LUZ SOLAR
+            </div>
+
+            <div class="diagram-label label-b">
+                GOTA DE ÁGUA
+            </div>
+
+            <div class="diagram-label label-c">
+                CORES
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     COMO ACONTECE
+================================================== -->
+
+<section class="research-section dark-section" id="como">
+
+
+    <div class="section-heading">
+
+
+        <div class="section-number">
+            02.
+        </div>
+
+
+        <div>
+
+            <span>
+                FENÔMENO ÓPTICO
+            </span>
+
+            <h2>
+
+                COMO O ARCO-ÍRIS
+
+                <br>
+
+                <strong>ACONTECE?</strong>
+
+            </h2>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="process-grid">
+
+
+        <article class="process-card">
+
+            <span>01</span>
+
+            <div class="process-icon">
+                ☀
+            </div>
+
+            <h3>
+                Luz solar
+            </h3>
+
+            <p>
+
+                A luz do Sol parece branca,
+                mas é composta por diferentes
+                cores.
+
+            </p>
+
+        </article>
+
+
+        <article class="process-card">
+
+            <span>02</span>
+
+            <div class="process-icon">
+                💧
+            </div>
+
+            <h3>
+                Refração
+            </h3>
+
+            <p>
+
+                Quando entra na gota, a luz
+                muda sua direção.
+
+            </p>
+
+        </article>
+
+
+        <article class="process-card">
+
+            <span>03</span>
+
+            <div class="process-icon">
+                ↔
+            </div>
+
+            <h3>
+                Reflexão
+            </h3>
+
+            <p>
+
+                Parte da luz é refletida
+                dentro da gota de água.
+
+            </p>
+
+        </article>
+
+
+        <article class="process-card highlighted">
+
+            <span>04</span>
+
+            <div class="process-icon">
+                🌈
+            </div>
+
+            <h3>
+                Dispersão
+            </h3>
+
+            <p>
+
+                As diferentes cores se separam
+                e podem chegar aos nossos olhos.
+
+            </p>
+
+        </article>
+
+
+    </div>
+
+
+    <div class="chemical-equation">
+
+        <span>
+            LUZ
+        </span>
+
+        <b>+</b>
+
+        <span>
+            ÁGUA
+        </span>
+
+        <b>+</b>
+
+        <span>
+            REFLEXÃO
+        </span>
+
+        <strong>
+            →
+        </strong>
+
+        <em>
+            ARCO-ÍRIS
+        </em>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     EXEMPLOS
+================================================== -->
+
+<section class="research-section" id="exemplos">
+
+
+    <div class="section-heading">
+
+        <div class="section-number">
+            03.
+        </div>
+
+        <div>
+
+            <span>
+                FENÔMENOS
+            </span>
+
+            <h2>
+
+                ONDE PODEMOS
+
+                <br>
+
+                <strong>VER AS CORES?</strong>
+
+            </h2>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="organisms-grid">
+
+
+        <article class="organism-card">
+
+            <div class="organism-image jellyfish"></div>
+
+            <div class="organism-content">
+
+                <span>
+                    ATMOSFÉRICO // 01
+                </span>
+
+                <h3>
+                    Arco-íris
+                </h3>
+
+                <p>
+
+                    Surge quando a luz solar
+                    interage com gotas de água
+                    na atmosfera.
+
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="organism-card">
+
+            <div class="organism-image firefly"></div>
+
+            <div class="organism-content">
+
+                <span>
+                    ATMOSFÉRICO // 02
+                </span>
+
+                <h3>
+                    Arco-íris duplo
+                </h3>
+
+                <p>
+
+                    Pode acontecer quando a luz
+                    sofre duas reflexões dentro
+                    das gotas.
+
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="organism-card">
+
+            <div class="organism-image plankton"></div>
+
+            <div class="organism-content">
+
+                <span>
+                    ÓPTICO // 03
+                </span>
+
+                <h3>
+                    Prisma
+                </h3>
+
+                <p>
+
+                    Um prisma também pode separar
+                    a luz branca em diferentes
+                    cores.
+
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="organism-card">
+
+            <div class="organism-image fungus"></div>
+
+            <div class="organism-content">
+
+                <span>
+                    COTIDIANO // 04
+                </span>
+
+                <h3>
+                    Água pulverizada
+                </h3>
+
+                <p>
+
+                    Mangueiras e fontes podem
+                    criar pequenas condições
+                    para observar um arco-íris.
+
+                </p>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     MITOS E VERDADES
+================================================== -->
+
+<section class="research-section dark-section" id="curiosidades">
+
+
+    <div class="section-heading">
+
+        <div class="section-number">
+            04.
+        </div>
+
+        <div>
+
+            <span>
+                MITOS E VERDADES
+            </span>
+
+            <h2>
+
+                VOCÊ
+
+                <br>
+
+                <strong>SABIA DISSO?</strong>
+
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <p class="section-description">
+
+        Clique nos cartões para revelar a resposta.
+
+    </p>
+
+
+
+    <div class="flashcard-grid">
+
+
+        <button class="flashcard">
+
+            <div class="card-number">
+                01
+            </div>
+
+            <span>
+                MITO OU VERDADE?
+            </span>
+
+            <h3>
+                O arco-íris possui
+                apenas três cores.
+            </h3>
+
+            <div class="flash-answer">
+
+                <strong>
+                    MITO
+                </strong>
+
+                <p>
+
+                    Tradicionalmente são destacadas
+                    sete cores, mas a luz visível
+                    forma um espectro contínuo.
+
+                </p>
+
+            </div>
+
+            <small>
+                CLIQUE PARA REVELAR
+            </small>
+
+        </button>
+
+
+
+        <button class="flashcard">
+
+            <div class="card-number">
+                02
+            </div>
+
+            <span>
+                MITO OU VERDADE?
+            </span>
+
+            <h3>
+                O arco-íris depende
+                da presença de água.
+            </h3>
+
+            <div class="flash-answer">
+
+                <strong>
+                    VERDADE
+                </strong>
+
+                <p>
+
+                    Gotas de água são necessárias
+                    para que a luz possa sofrer
+                    os fenômenos ópticos envolvidos.
+
+                </p>
+
+            </div>
+
+            <small>
+                CLIQUE PARA REVELAR
+            </small>
+
+        </button>
+
+
+
+        <button class="flashcard">
+
+            <div class="card-number">
+                03
+            </div>
+
+            <span>
+                MITO OU VERDADE?
+            </span>
+
+            <h3>
+                É possível encontrar
+                um arco-íris no chão.
+            </h3>
+
+            <div class="flash-answer">
+
+                <strong>
+                    MITO
+                </strong>
+
+                <p>
+
+                    O arco-íris é um fenômeno
+                    óptico que depende da posição
+                    do observador e das gotas.
+
+                </p>
+
+            </div>
+
+            <small>
+                CLIQUE PARA REVELAR
+            </small>
+
+        </button>
+
+
+
+        <button class="flashcard">
+
+            <div class="card-number">
+                04
+            </div>
+
+            <span>
+                MITO OU VERDADE?
+            </span>
+
+            <h3>
+                O arco-íris pode aparecer
+                depois da chuva.
+            </h3>
+
+            <div class="flash-answer">
+
+                <strong>
+                    VERDADE
+                </strong>
+
+                <p>
+
+                    Quando ainda existem gotas
+                    de água no ar e há luz solar,
+                    as condições podem favorecer
+                    sua formação.
+
+                </p>
+
+            </div>
+
+            <small>
+                CLIQUE PARA REVELAR
+            </small>
+
+        </button>
+
+
+
+        <button class="flashcard">
+
+            <div class="card-number">
+                05
+            </div>
+
+            <span>
+                MITO OU VERDADE?
+            </span>
+
+            <h3>
+                O arco-íris é um objeto
+                que fica no céu.
+            </h3>
+
+            <div class="flash-answer">
+
+                <strong>
+                    MITO
+                </strong>
+
+                <p>
+
+                    Ele é um fenômeno óptico.
+                    Sua aparência depende da
+                    posição do observador.
+
+                </p>
+
+            </div>
+
+            <small>
+                CLIQUE PARA REVELAR
+            </small>
+
+        </button>
+
+
+
+        <button class="flashcard">
+
+            <div class="card-number">
+                06
+            </div>
+
+            <span>
+                MITO OU VERDADE?
+            </span>
+
+            <h3>
+                O arco-íris pode ser visto
+                em uma fonte de água.
+            </h3>
+
+            <div class="flash-answer">
+
+                <strong>
+                    VERDADE
+                </strong>
+
+                <p>
+
+                    Gotas de água pulverizadas
+                    podem produzir condições
+                    semelhantes às da chuva.
+
+                </p>
+
+            </div>
+
+            <small>
+                CLIQUE PARA REVELAR
+            </small>
+
+        </button>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     ROBÓTICA
+================================================== -->
+
+<section class="research-section" id="robotica">
+
+
+    <div class="section-heading">
+
+        <div class="section-number">
+            05.
+        </div>
+
+        <div>
+
+            <span>
+                EVIDÊNCIAS DA DISCIPLINA
+            </span>
+
+            <h2>
+
+                ROBÓTICA:
+
+                <br>
+
+                <strong>FADE-IN E FADE-OUT</strong>
+
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <p class="section-description">
+
+        Nesta parte do projeto são apresentados os
+        registros da disciplina de Robótica, relacionados
+        aos efeitos de fade-in e fade-out.
+
+    </p>
+
+
+
+    <div class="gallery">
+
+
+        <figure>
+
+            <img
+                src="imagens/fade-in-1.jpg"
+                alt="Registro da atividade de fade-in">
+
+            <figcaption>
+                01 // FADE-IN
+            </figcaption>
+
+        </figure>
+
+
+        <figure>
+
+            <img
+                src="imagens/fade-in-2.jpg"
+                alt="Registro da atividade de fade-in">
+
+            <figcaption>
+                02 // FADE-IN
+            </figcaption>
+
+        </figure>
+
+
+        <figure>
+
+            <img
+                src="imagens/fade-out-1.jpg"
+                alt="Registro da atividade de fade-out">
+
+            <figcaption>
+                03 // FADE-OUT
+            </figcaption>
+
+        </figure>
+
+
+        <figure>
+
+            <img
+                src="imagens/fade-out-2.jpg"
+                alt="Registro da atividade de fade-out">
+
+            <figcaption>
+                04 // FADE-OUT
+            </figcaption>
+
+        </figure>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     QUIZ
+================================================== -->
+
+<section class="quiz-section" id="quiz">
+
+
+    <div class="quiz-header">
+
+        <span>
+            06 // TESTE SEUS CONHECIMENTOS
+        </span>
+
+        <h2>
+
+            QUIZ SOBRE
+
+            <strong>ARCO-ÍRIS</strong>
+
+        </h2>
+
+        <p>
+            Descubra quanto você aprendeu.
+        </p>
+
+    </div>
+
+
+
+    <div class="quiz-box" id="quizBox">
+
+
+        <div class="quiz-top">
+
+            <span id="questionNumber">
+                QUESTÃO 01 / 05
+            </span>
+
+
+            <div class="quiz-progress">
+
+                <div id="quizProgress"></div>
+
+            </div>
+
+
+            <strong id="scoreDisplay">
+                0 PONTOS
+            </strong>
+
+        </div>
+
+
+
+        <div id="questionArea">
+
+
+            <h3 id="question">
+                O que é necessário para formar
+                um arco-íris?
+            </h3>
+
+
+            <div class="answers" id="answers"></div>
+
+
+            <button
+                class="next-question"
+                id="nextQuestion"
+                disabled>
+
+                PRÓXIMA QUESTÃO →
+
+            </button>
+
+
+        </div>
+
+
+
+        <div
+            class="quiz-result"
+            id="quizResult">
+
+            <div class="result-icon">
+                🌈
+            </div>
+
+            <h3>
+                QUIZ FINALIZADO
+            </h3>
+
+            <p id="finalScore">
+                Você fez 0 pontos.
+            </p>
+
+            <button id="restartQuiz">
+                FAZER NOVAMENTE
+            </button>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     EVIDÊNCIAS
+================================================== -->
+
+<section
+    class="research-section evidence-section"
+    id="evidencias">
+
+
+    <div class="section-heading">
+
+        <div class="section-number">
+            07.
+        </div>
+
+        <div>
+
+            <span>
+                EVIDÊNCIAS DO PROJETO
+            </span>
+
+            <h2>
+
+                GALERIA DA
+
+                <br>
+
+                <strong>PESQUISA</strong>
+
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <p class="section-description">
+
+        Registros, imagens e materiais utilizados
+        durante o desenvolvimento do projeto.
+
+    </p>
+
+
+
+    <div class="gallery">
+
+
+        <figure>
+
+            <img
+                src="imagens/arco-iris-1.jpg"
+                alt="Imagem de arco-íris">
+
+            <figcaption>
+                01 // ARCO-ÍRIS
+            </figcaption>
+
+        </figure>
+
+
+        <figure>
+
+            <img
+                src="imagens/arco-iris-2.jpg"
+                alt="Imagem relacionada ao arco-íris">
+
+            <figcaption>
+                02 // LUZ E ÁGUA
+            </figcaption>
+
+        </figure>
+
+
+        <figure>
+
+            <img
+                src="imagens/luz-1.jpg"
+                alt="Imagem sobre luz">
+
+            <figcaption>
+                03 // LUZ
+            </figcaption>
+
+        </figure>
+
+
+        <figure>
+
+            <img
+                src="imagens/experimento.jpg"
+                alt="Registro do experimento">
+
+            <figcaption>
+                04 // EXPERIMENTO
+            </figcaption>
+
+        </figure>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     CONCLUSÃO
+================================================== -->
+
+<section class="conclusion" id="conclusao">
+
+
+    <div class="conclusion-content">
+
+
+        <div>
+
+            <span>
+                08 // CONCLUSÃO
+            </span>
+
+
+            <h2>
+
+                UMA LUZ QUE
+
+                <strong>
+                    REVELA AS CORES.
+                </strong>
+
+            </h2>
+
+
+            <p>
+
+                O arco-íris é um exemplo de como
+                fenômenos físicos podem transformar
+                algo comum, como a luz do Sol e a água,
+                em um espetáculo de cores.
+
+            </p>
+
+
+            <p>
+
+                Ao estudar a refração, reflexão e
+                dispersão da luz, podemos compreender
+                melhor como esse fenômeno acontece
+                e perceber a ciência presente no
+                nosso cotidiano.
+
+            </p>
+
+
+        </div>
+
+
+        <div class="conclusion-light">
+
+            <div class="big-light"></div>
+
+            <div class="small-light sl1"></div>
+            <div class="small-light sl2"></div>
+            <div class="small-light sl3"></div>
+            <div class="small-light sl4"></div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     FONTES
+================================================== -->
+
+<section class="sources">
+
+
+    <div>
+
+        <span>
+            FONTES DE PESQUISA
+        </span>
+
+        <h2>
+            Referências
+        </h2>
+
+    </div>
+
+
+    <div class="source-links">
+
+
+        <a
+            href="https://science.nasa.gov/earth/earth-observatory/rainbows/"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            NASA
+
+            <span>↗</span>
+
+        </a>
+
+
+        <a
+            href="https://www.britannica.com/science/rainbow-atmospheric-phenomenon"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            Britannica
+
+            <span>↗</span>
+
+        </a>
+
+
+        <a
+            href="https://www.weather.gov/jetstream/rainbow"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            National Weather Service
+
+            <span>↗</span>
+
+        </a>
+
+
+    </div>
+
+</section>
+
+
+
+</main>
+
+
+
+<!-- ==================================================
+     RODAPÉ
+================================================== -->
+
+<footer>
+
+
+    <div class="footer-main">
+
+
+        <div class="footer-brand">
+
+            <div class="logo">
+
+                <div class="logo-symbol">
+                    🌈
+                </div>
+
+                <div class="logo-text">
+
+                    <strong>A MAGIA</strong>
+
+                    <span>DAS CORES</span>
+
+                </div>
+
+            </div>
+
+
+            <p>
+                Projeto interdisciplinar escolar
+            </p>
+
+        </div>
+
+
+
+        <div>
+
+            <small>
+                INTEGRANTES
+            </small>
+
+            <strong>
+                Barbara & Maria Clara
+            </strong>
+
+            <p>
+                2G • Tarde
+            </p>
+
+        </div>
+
+
+
+        <div>
+
+            <small>
+                INSTITUIÇÃO
+            </small>
+
+            <strong>
+
+                COLÉGIO ESTADUAL
+                PADRE CLÁUDIO MORELLI
+
+            </strong>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="footer-bottom">
+
+        ARCO-ÍRIS // PROJETO ESCOLAR
+
+        <span>
+            2026
+        </span>
+
+    </div>
+
+
+</footer>
+
+
+
+<!-- ==================================================
+     BOTÃO VOLTAR AO TOPO
+================================================== -->
+
+<button
+    class="back-top"
+    id="backTop"
+    aria-label="Voltar ao topo">
+
+    ↑
+
+</button>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

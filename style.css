@@ -1,0 +1,476 @@
+/* ==================================================
+   PROJETO DE ROBÓTICA - ARCO-ÍRIS
+================================================== */
+
+.robotics-section {
+
+    width: 100%;
+
+    padding: 130px 4%;
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(0,234,255,.08),
+            transparent 35%
+        ),
+        #020a12;
+
+    border-top:
+        1px solid rgba(0,234,255,.08);
+
+    border-bottom:
+        1px solid rgba(0,234,255,.08);
+
+}
+
+
+.robotics-content {
+
+    max-width: 1450px;
+
+    margin: auto;
+
+}
+
+
+/* CABEÇALHO DA SEÇÃO */
+
+.robotics-heading {
+
+    display: flex;
+
+    gap: 25px;
+
+    align-items: flex-start;
+
+    margin-bottom: 45px;
+
+}
+
+
+.robotics-number {
+
+    color: var(--cyan);
+
+    font-family: "Orbitron";
+
+    font-size: 18px;
+
+}
+
+
+.robotics-heading > div span {
+
+    color: var(--cyan);
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+}
+
+
+.robotics-heading h2 {
+
+    margin-top: 15px;
+
+    font-family: "Orbitron";
+
+    font-size: clamp(35px, 5vw, 60px);
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+
+}
+
+
+.robotics-heading h2 strong {
+
+    color: var(--cyan);
+
+}
+
+
+/* TEXTO SOBRE A RELAÇÃO */
+
+.robotics-description {
+
+    max-width: 950px;
+
+    color: var(--text);
+
+    font-size: 15px;
+
+    line-height: 1.9;
+
+    margin-bottom: 25px;
+
+}
+
+
+.robotics-description strong {
+
+    color: var(--cyan);
+
+}
+
+
+.robotics-connection {
+
+    max-width: 1100px;
+
+    margin-bottom: 60px;
+
+    padding: 28px 30px;
+
+    display: flex;
+
+    gap: 20px;
+
+    align-items: flex-start;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(0,234,255,.07),
+            rgba(0,100,150,.02)
+        );
+
+    border: 1px solid var(--border);
+
+    border-left:
+        3px solid var(--cyan);
+
+    box-shadow:
+        0 15px 50px rgba(0,0,0,.2);
+
+}
+
+
+.robotics-connection-icon {
+
+    color: var(--cyan);
+
+    font-size: 28px;
+
+    text-shadow:
+        0 0 15px rgba(0,234,255,.5);
+
+}
+
+
+.robotics-connection strong {
+
+    display: block;
+
+    color: var(--cyan);
+
+    font-family: "Orbitron";
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.robotics-connection p {
+
+    color: #abc0c7;
+
+    font-size: 12px;
+
+    line-height: 1.8;
+
+}
+
+
+/* TÍTULO DAS FOTOS */
+
+.robotics-gallery-title {
+
+    margin-bottom: 25px;
+
+}
+
+
+.robotics-gallery-title span {
+
+    color: var(--cyan);
+
+    font-family: "Orbitron";
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.robotics-gallery-title h3 {
+
+    margin-top: 10px;
+
+    font-family: "Orbitron";
+
+    font-size: 22px;
+
+}
+
+
+/* GALERIA */
+
+.robotics-gallery {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+
+}
+
+
+/* CADA FOTO */
+
+.robotics-photo {
+
+    position: relative;
+
+    height: 300px;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            145deg,
+            #071925,
+            #030b12
+        );
+
+    border: 1px solid var(--border);
+
+    transition:
+        transform .35s,
+        border-color .35s,
+        box-shadow .35s;
+
+}
+
+
+/* EFEITO AO PASSAR O MOUSE */
+
+.robotics-photo:hover {
+
+    transform: translateY(-7px);
+
+    border-color: var(--cyan);
+
+    box-shadow:
+        0 15px 45px rgba(0,234,255,.12);
+
+}
+
+
+/* IMAGEM */
+
+.robotics-photo img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    opacity: .65;
+
+    filter:
+        saturate(.7)
+        brightness(.65);
+
+    transition:
+        transform .6s,
+        opacity .4s,
+        filter .4s;
+
+}
+
+
+.robotics-photo:hover img {
+
+    transform: scale(1.07);
+
+    opacity: 1;
+
+    filter:
+        saturate(1)
+        brightness(.9);
+
+}
+
+
+/* CAMADA ESCURA NA PARTE INFERIOR */
+
+.robotics-photo::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: 0;
+
+    height: 45%;
+
+    background:
+        linear-gradient(
+            transparent,
+            rgba(0,0,0,.9)
+        );
+
+    pointer-events: none;
+
+}
+
+
+/* LEGENDA */
+
+.robotics-photo-caption {
+
+    position: absolute;
+
+    left: 20px;
+
+    right: 20px;
+
+    bottom: 18px;
+
+    z-index: 2;
+
+}
+
+
+.robotics-photo-caption span {
+
+    color: var(--cyan);
+
+    font-family: "Orbitron";
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.robotics-photo-caption strong {
+
+    display: block;
+
+    color: white;
+
+    font-size: 13px;
+
+    margin-top: 6px;
+
+}
+
+
+/* NÚMERO DA FOTO */
+
+.robotics-photo-number {
+
+    position: absolute;
+
+    top: 15px;
+
+    right: 18px;
+
+    z-index: 3;
+
+    color: var(--cyan);
+
+    font-family: "Orbitron";
+
+    font-size: 10px;
+
+    padding: 7px 9px;
+
+    background:
+        rgba(2,10,16,.75);
+
+    border: 1px solid var(--border);
+
+}
+
+
+/* RESPONSIVO */
+
+@media(max-width:900px) {
+
+    .robotics-gallery {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media(max-width:750px) {
+
+    .robotics-section {
+
+        padding: 100px 5%;
+
+    }
+
+
+    .robotics-heading {
+
+        gap: 15px;
+
+    }
+
+
+    .robotics-heading h2 {
+
+        font-size: 35px;
+
+    }
+
+
+    .robotics-connection {
+
+        padding: 20px;
+
+    }
+
+
+    .robotics-gallery {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .robotics-photo {
+
+        height: 260px;
+
+    }
+
+}
